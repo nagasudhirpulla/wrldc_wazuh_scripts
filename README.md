@@ -1,1 +1,1 @@
-Automation scripts get insights from Wazuh agents through Wazuh API
+Automation scripts to get insights from Wazuh agents through Wazuh API
