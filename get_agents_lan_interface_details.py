@@ -29,6 +29,7 @@ for agnt in activeAgents:
     osName = agnt.get("os", None).get("name", None)
     osPlatform = agnt.get("os", None).get("platform", None)
     osVersion = agnt.get("os", None).get("version", None)
+    lastKeepAlive = agnt.get("lastKeepAlive", None)
 
     if osPlatform is None:
         continue
@@ -42,7 +43,8 @@ for agnt in activeAgents:
             "agentIp": agentIp,
             "osName": osName,
             "osPlatform": osPlatform,
-            "osVersion": osVersion
+            "osVersion": osVersion,
+            "lastKeepAlive": lastKeepAlive
         })
 
 print("\ngetting ethernet interfaces summary in all agents:")
